@@ -8,6 +8,7 @@ import MembersList from './components/Members/MembersList';
 import CreateChannelModal from './components/Channels/CreateChannelModal';
 import CreateClubModal from './components/Clubs/CreateClubModal';
 import DownloadModal from './components/Downloads/DownloadModal';
+import FloatingChatbot from './components/GeminiChatbot/FloatingChatbot';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import ChatArea from './components/ChatArea';
@@ -508,6 +509,9 @@ function App() {
           onSendChatMessage={handleSendChatMessage}
         />
       )}
+
+      {/* Floating Gemini AI Chatbot */}
+      <FloatingChatbot />
     </>
   );
 }
